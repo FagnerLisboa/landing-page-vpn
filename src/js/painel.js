@@ -4,14 +4,14 @@ const setaVoltar = document.getElementById('btn-voltar');
 let imagemAtual = 0;
 
 function esconderImagens() {
-    
+
     imagensPainel.forEach(imagem => {
         imagem.classList.remove('mostrar')
     });
 }
 
 function mostrarImagem() {
-   
+
     imagensPainel[imagemAtual].classList.add('mostrar');
 }
 
@@ -23,7 +23,7 @@ setaAvancar.addEventListener('click', function() {
     }
 
     imagemAtual++;
-    
+
     esconderImagens();
     mostrarImagem();
 });
